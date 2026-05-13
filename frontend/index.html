@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurav | QA Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────── -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Saurav</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-tag fade-up">👋 Hello, I'm</p>
+      <h1 class="hero-name fade-up delay-1">Saurav</h1>
+      <h2 class="hero-role fade-up delay-2">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc fade-up delay-3">
+        QA Engineer with hands-on experience across SaaS platforms, e-commerce systems,
+        agro-tech, CRM tools, and mobile apps — bridging dev teams and clients
+        to ship software that actually works.
+      </p>
+      <div class="hero-cta fade-up delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-badge fade-up delay-5">
+      <div class="badge-ring">
+        <svg viewBox="0 0 100 100" class="badge-svg">
+          <defs>
+            <path id="circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+          </defs>
+          <text font-size="11" fill="var(--accent)" font-family="Inter, sans-serif">
+            <textPath href="#circle">QA Engineer • Bug Hunter • Automation •&nbsp;</textPath>
+          </text>
+        </svg>
+        <div class="badge-center">QA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <p class="section-tag">Who I Am</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a QA Engineer with experience across diverse domains — from large-scale
+            SaaS marketplaces and agro-tech platforms to e-commerce websites, mobile apps,
+            and school management systems. I've been involved throughout the full QA lifecycle:
+            writing and executing test cases, performing manual and automated testing,
+            reporting bugs, validating fixes, and supporting release sign-offs.
+          </p>
+          <p style="margin-top:1rem;">
+            I've also worked closely with clients and cross-functional teams by conducting
+            meetings, presenting product updates, reviewing support tickets, and translating
+            client feedback into clear and actionable Jira tasks for developers. This experience
+            helped me build strong communication skills and bridge the gap between business
+            requirements and technical implementation.
+          </p>
+          <p style="margin-top:1rem;">
+            Beyond manual testing, I've developed and maintained Python Selenium automation
+            scripts on live projects for regression testing, UI validations, and repetitive
+            workflows. I enjoy building efficient QA processes that improve reliability,
+            reduce manual effort, and make releases smoother and more consistent.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <p class="stat-num" data-target="7">0</p>
+              <p class="stat-label">Projects Tested</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num" data-target="3">0</p>
+              <p class="stat-label">Domains Covered</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num" data-target="100">0</p>
+              <p class="stat-label">Test Cases Written</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="role-card">
+            <div class="role-icon">🔍</div>
+            <h3>Manual Testing</h3>
+            <p>Functional, regression, smoke, exploratory — across web and mobile</p>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🐍</div>
+            <h3>Automation</h3>
+            <p>Python + Selenium for UI automation and performance testing</p>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🤝</div>
+            <h3>Client Handling</h3>
+            <p>Meetings, product demos, timely updates and ticket management</p>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">📋</div>
+            <h3>QA Process</h3>
+            <p>Test plans, bug reports, Jira workflows, cross-team coordination</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────── -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <p class="section-tag">What I Work With</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Testing</h3>
+          <div class="skill-tags">
+            <span class="tag">Manual Testing</span>
+            <span class="tag">Regression Testing</span>
+            <span class="tag">Smoke Testing</span>
+            <span class="tag">Exploratory Testing</span>
+            <span class="tag">Functional Testing</span>
+            <span class="tag">Performance Testing</span>
+            <span class="tag">Mobile App Testing</span>
+            <span class="tag">API Testing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Jira</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Professional</h3>
+          <div class="skill-tags">
+            <span class="tag">Client Communication</span>
+            <span class="tag">Ticket Management</span>
+            <span class="tag">Test Case Design</span>
+            <span class="tag">Bug Reporting</span>
+            <span class="tag">IT Support</span>
+            <span class="tag">Cross-team Coordination</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────── -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <p class="section-tag">What I've Worked On</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🏪</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>Multi-Vendor SaaS Marketplace</h3>
+          <p>
+            Large-scale SaaS platform with a central admin panel and a supplier panel —
+            think Amazon-style, where the admin onboards sellers who list products,
+            manage inventory, and handle orders. Tested the full seller onboarding flow,
+            product listings, inventory management, and an integrated accounting module
+            with ledger accounts, balance sheets, and transaction logs.
+          </p>
+          <div class="project-tags">
+            <span>Manual Testing</span><span>Regression</span><span>Jira</span><span>SaaS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🌾</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>Agro-Tech Platform</h3>
+          <p>
+            End-to-end testing of an agro platform consisting of three interconnected
+            products: an e-commerce site where farmers sell produce directly to buyers
+            (with both web and mobile apps tested), a CropManagement app giving farmers
+            real-time notifications on harvest schedules and crop care based on weather
+            data, and an accounting tool for sellers to track sales, purchases, receipts,
+            and transaction history.
+          </p>
+          <div class="project-tags">
+            <span>Mobile Testing</span><span>Web Testing</span><span>API Testing</span><span>Agro-tech</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🛒</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>
+            Tested a standard e-commerce platform covering product browsing, cart flows,
+            checkout, payment processing, and order management — across both web and
+            mobile applications. Focused on edge cases, UI consistency, and payment
+            gateway reliability.
+          </p>
+          <div class="project-tags">
+            <span>Manual Testing</span><span>Mobile App</span><span>Regression</span><span>Postman</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎓</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>CRM — School Management System</h3>
+          <p>
+            Tested a CRM-based school management system covering student enrollment,
+            class scheduling, attendance tracking, and administrative workflows.
+            Verified data integrity across modules and ensured smooth user flows
+            for both staff and administrators.
+          </p>
+          <div class="project-tags">
+            <span>CRM Testing</span><span>Functional Testing</span><span>Jira</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>Python Selenium Automation</h3>
+          <p>
+            Built and maintained automated test scripts using Python and Selenium for
+            UI regression and performance testing across web applications. Reduced
+            repetitive manual test cycles and improved overall release confidence.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Selenium</span><span>Performance Testing</span><span>Automation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🖥️</span>
+            <a href="#" class="project-link" title="View Details">↗</a>
+          </div>
+          <h3>IT Support &amp; Client Relations</h3>
+          <p>
+            Handled IT support for clients alongside QA work — conducting product
+            demo meetings, presenting updates, reviewing incoming support tickets,
+            and creating corresponding Jira issues for the development team. Acted
+            as the bridge between client expectations and developer delivery.
+          </p>
+          <div class="project-tags">
+            <span>Client Communication</span><span>Jira</span><span>IT Support</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────── -->
+  <section id="contact" class="contact section">
+    <div class="container contact-container">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-sub">Need a QA engineer who communicates clearly and delivers? Let's talk.</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder=" " required autocomplete="off" />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder=" " required autocomplete="off" />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+        <p class="form-success" id="formSuccess" style="display:none;">✅ Message sent! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Saurav</p>
+      <p class="footer-copy">© 2025 Saurav · QA Engineer</p>
+      <div class="footer-links">
+        <a href="mailto:sauraavpdl@gmail.com">Email</a>
+        <a href="https://github.com/sauraavpdl" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/sauravpdl" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
