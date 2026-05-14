@@ -2,37 +2,17 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* --- Professional Portfolio & QA Palette (Refined) --- */
-  /* Optimized for trust, precision, and clean design. */
+  --bg:       #000000;
+  --surface:  rgba(255,255,255,0.04);
+  --border:   rgba(255,255,255,0.1);
+  --accent:   #ffffff;
+  --accent2:  rgba(255,255,255,0.5);
+  --text:     #ffffff;
+  --muted:    rgba(255,255,255,0.4);
+  --radius:   14px;
+  --ease:     cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Surface and Background - Kept near-black and deep charcoal for high contrast with accents. */
-  --bg:         #0b0d11; /* Deep charcoal */
-  --surface:    #111318; /* Near-black surface */
-  --border:     #242930; /* Subtly darker, cooler gray for borders */
 
-  /* Core Accent: Primary Identity (Trust, QA Reliability) */
-  /* Replaces your single bright green as the main 'color of trust'. */
-  --accent:     #0047AB; /* Cobalt Blue - Deep, rich blue for logo, major headers, and professionalism. */
-
-  /* Interactive Accent: Second Primary (Energy, Modernity) */
-  /* Replaces your old accent2 (Cyan) with a more defined, vibrant blue. */
-  --accent2:    #0096FF; /* Sky Blue - Bright, interactive blue for buttons, links, and hover states. */
-
-  /* Functional Utility: 'Pass/Success' Color (Your old green) */
-  /* Your old main accent is now optimized and assigned a specific role (e.g., test PASS status). */
-  --success:    #00e5a0; /* Aero Green - Used strictly for success indicators or data points. */
-
-  /* Text & Utility */
-  --text:       #FBFDFF; /* Pure, slightly cooler white for max legibility on dark themes */
-  --muted:      #8D94A1; /* Muted slate gray for secondary details/captions */
-
-  /* Typography */
-  --font-head:  'Plus Jakarta Sans', sans-serif; /* Clean, geometric, innovative header font */
-  --font-body:  'Inter', sans-serif;             /* Highly legible, functional body font */
-
-  /* Layout and Motion */
-  --radius:     14px;                           /* Modern, soft corners */
-  --ease:       cubic-bezier(0.4, 0, 0.2, 1);     /* Smooth, precise movement */
 }
 
 html { scroll-behavior: smooth; }
@@ -453,68 +433,50 @@ nav.scrolled { border-bottom-color: var(--border); }
   color: var(--accent);
 }
 
-/* ─── CONTACT ─────────────────────────────────────────────────── */
-.contact-container { max-width: 620px; }
+/* ─── CONNECT / SOCIAL ────────────────────────────────────────── */
+.connect { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
-.contact-sub {
+.connect-container { max-width: 1100px; }
+
+.connect-sub {
   color: var(--muted);
   margin-top: -1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   font-size: 1rem;
+  max-width: 520px;
 }
 
-.contact-form { display: flex; flex-direction: column; gap: 1.4rem; }
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-.form-group { position: relative; }
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  background: var(--surface);
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 100px;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem 1.2rem;
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 300;
-  outline: none;
-  transition: border-color 0.25s;
-  resize: vertical;
-}
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--accent);
-}
-
-.form-group label {
-  position: absolute;
-  left: 1.2rem;
-  top: 1rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-  pointer-events: none;
-  transition: 0.2s var(--ease);
   background: var(--surface);
-  padding: 0 0.3rem;
-}
-
-.form-group input:focus + label,
-.form-group input:not(:placeholder-shown) + label,
-.form-group textarea:focus + label,
-.form-group textarea:not(:placeholder-shown) + label {
-  top: -0.55rem;
-  font-size: 0.75rem;
-  color: var(--accent);
-}
-
-.submit-btn { align-self: flex-start; }
-
-.form-success {
-  color: var(--accent);
+  color: var(--muted);
+  text-decoration: none;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  font-weight: 500;
+  transition: color 0.25s, border-color 0.25s, transform 0.25s, background 0.25s;
 }
+
+.social-btn span { color: var(--text); transition: color 0.25s; }
+
+.social-btn:hover { transform: translateY(-3px); }
+
+.social-btn.linkedin:hover  { border-color: #0077b5; color: #0077b5; background: rgba(0,119,181,0.08); }
+.social-btn.github:hover    { border-color: #fff;    color: #fff;    background: rgba(255,255,255,0.06); }
+.social-btn.facebook:hover  { border-color: #1877f2; color: #1877f2; background: rgba(24,119,242,0.08); }
+.social-btn.instagram:hover { border-color: #e1306c; color: #e1306c; background: rgba(225,48,108,0.08); }
+
+.social-btn:hover span { color: inherit; }
 
 /* ─── FOOTER ──────────────────────────────────────────────────── */
 .footer {
@@ -527,26 +489,39 @@ nav.scrolled { border-bottom-color: var(--border); }
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .footer-logo {
   font-family: var(--font-head);
   font-weight: 800;
   font-size: 1.2rem;
+  color: var(--text);
 }
-.footer-logo span { color: var(--accent); }
 
 .footer-copy { font-size: 0.82rem; color: var(--muted); }
 
-.footer-links { display: flex; gap: 1.5rem; }
-.footer-links a {
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.2s;
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
-.footer-links a:hover { color: var(--accent); }
+
+.footer-socials a {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+.footer-socials a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
 
 /* ─── ANIMATIONS ──────────────────────────────────────────────── */
 .fade-up {
@@ -617,9 +592,9 @@ nav.scrolled { border-bottom-color: var(--border); }
   .about-stats { gap: 1.5rem; }
 
   .projects-grid { grid-template-columns: 1fr; }
-
+  .social-row { gap: 0.75rem; }
   .footer-inner { flex-direction: column; text-align: center; }
-  .footer-links { justify-content: center; }
+  .footer-socials { justify-content: center; }
 }
 
 @media (max-width: 420px) {
