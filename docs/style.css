@@ -2,17 +2,37 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:        #0b0d11;
-  --surface:   #111318;
-  --border:    #1e2229;
-  --accent:    #00e5a0;
-  --accent2:   #00b8ff;
-  --text:      #e8eaf0;
-  --muted:     #6b7280;
-  --font-head: 'Plus Jakarta Sans', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --radius:    14px;
-  --ease:      cubic-bezier(0.4, 0, 0.2, 1);
+  /* --- Professional Portfolio & QA Palette (Refined) --- */
+  /* Optimized for trust, precision, and clean design. */
+
+  /* Surface and Background - Kept near-black and deep charcoal for high contrast with accents. */
+  --bg:         #0b0d11; /* Deep charcoal */
+  --surface:    #111318; /* Near-black surface */
+  --border:     #242930; /* Subtly darker, cooler gray for borders */
+
+  /* Core Accent: Primary Identity (Trust, QA Reliability) */
+  /* Replaces your single bright green as the main 'color of trust'. */
+  --accent:     #0047AB; /* Cobalt Blue - Deep, rich blue for logo, major headers, and professionalism. */
+
+  /* Interactive Accent: Second Primary (Energy, Modernity) */
+  /* Replaces your old accent2 (Cyan) with a more defined, vibrant blue. */
+  --accent2:    #0096FF; /* Sky Blue - Bright, interactive blue for buttons, links, and hover states. */
+
+  /* Functional Utility: 'Pass/Success' Color (Your old green) */
+  /* Your old main accent is now optimized and assigned a specific role (e.g., test PASS status). */
+  --success:    #00e5a0; /* Aero Green - Used strictly for success indicators or data points. */
+
+  /* Text & Utility */
+  --text:       #FBFDFF; /* Pure, slightly cooler white for max legibility on dark themes */
+  --muted:      #8D94A1; /* Muted slate gray for secondary details/captions */
+
+  /* Typography */
+  --font-head:  'Plus Jakarta Sans', sans-serif; /* Clean, geometric, innovative header font */
+  --font-body:  'Inter', sans-serif;             /* Highly legible, functional body font */
+
+  /* Layout and Motion */
+  --radius:     14px;                           /* Modern, soft corners */
+  --ease:       cubic-bezier(0.4, 0, 0.2, 1);     /* Smooth, precise movement */
 }
 
 html { scroll-behavior: smooth; }
